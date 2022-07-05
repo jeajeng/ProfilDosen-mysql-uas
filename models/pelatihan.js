@@ -72,7 +72,7 @@ module.exports = {
   },
 
   delete: (nidn, result) => {
-    db.query("DELETE FROM peltihan WHERE nidn = ?", nidn, (err, res) => {
+    db.query("DELETE FROM pelatihan WHERE nidn = ?", nidn, (err, res) => {
       if (err) {
         console.log("error:", err);
         result(null, err);
